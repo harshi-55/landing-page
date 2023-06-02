@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>landing page</title>
+        <link rel="stylesheet" href="./landingpage.css">
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+                <a href="#"><img src="https://seeklogo.com/images/P/pepsi-logo-94D7DEF922-seeklogo.com.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Whats new</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>Thats what<br><span>I like</span></h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="#">view all products</a>
+                </div>
+                <div class="imgbox">
+                    <img src="https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png" class="pepsi" >
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png" onclick="imageslider('https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png');changebgcolor('#0062be')"></li>
+                <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Pepsi_Free_can.png/150px-Pepsi_Free_can.png" onclick="imageslider('https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Pepsi_Free_can.png/150px-Pepsi_Free_can.png');changebgcolor('#e60c2c')" ></li>
+                <li><img src="https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png" onclick="imageslider('https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png');changebgcolor('#1e1e1e')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src=""></a></li>
+                <li><a href="#"><img src=""></a></li>
+                <li><a href="#"><img src=""></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imageslider(anything){
+                document.querySelector('.pepsi').src = anything;
+            }
+            function changebgcolor(color){
+                const sec= document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+    </body>
+</html>
